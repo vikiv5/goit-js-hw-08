@@ -16,7 +16,8 @@ returnLocalStorageData()
 function onSubmitForm (evt){
 evt.preventDefault();
 evt.currentTarget.reset();
-localStorage.removeItem("feedback-form-state")
+localStorage.removeItem("feedback-form-state");
+console.log (objectData);
 }
 
 
