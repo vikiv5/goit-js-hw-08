@@ -1,6 +1,6 @@
 import throttle from "lodash.throttle";
 
-const feedbackForm = document.querySelector ("feedback-form");
+const feedbackForm = document.querySelector (".feedback-form");
 const emailInput = document.querySelector ("input");
 const messageInput = document.querySelector ("textarea");
 
@@ -16,8 +16,6 @@ localStorage.removeItem("feedback-form-state")
 feedbackForm.addEventListener("input", throttle(onTextareaInput ,500))
 function onTextareaInput(evt) {
 const message = evt.target.value ;
-
-
 localStorage.setItem ("feedback-form-state" , message)
 }
 
